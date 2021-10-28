@@ -13,6 +13,5 @@ while (array2.length < array1.length) {
     randomNum = Math.floor(Math.random() * 100 + 4);
     console.log("numero random da aggiungere all'array2", randomNum);
     array2.push(randomNum);
-    array2.legth++;
 }
 console.log(array2);
