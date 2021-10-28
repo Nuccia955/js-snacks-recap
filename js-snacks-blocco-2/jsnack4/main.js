@@ -9,9 +9,19 @@ const array2 = [1, 2, 3];
 console.log(array1);
 console.log(array2);
 let randomNum;
-while (array2.length < array1.length) {
+/* while (array2.length < array1.length) {
     randomNum = Math.floor(Math.random() * 100 + 4);
     console.log("numero random da aggiungere all'array2", randomNum);
     array2.push(randomNum);
+} */
+
+while (array2.length !== array1.length) {
+    randomNum = Math.floor(Math.random() * 100 + 4);
+    console.log("numero random da aggiungere all'array2", randomNum);
+    if (array2.length < array1.length) {
+        array2.push(randomNum);
+    } else {
+        array1.push(randomNum);
+    }
 }
 console.log(array2);
